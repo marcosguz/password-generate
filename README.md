@@ -1,7 +1,6 @@
 <h1 align="center">Password Generate App</h1>
 
-## Architecture
-This application will be contained in an application component or root component.
+
 
 ```javascript
 export function PasswordGeneratorCard() {
@@ -18,6 +17,9 @@ export function PasswordGeneratorCard() {
     );
 }
 ```
+## Architecture
+This application will be contained in an application component or root component.
+
 <table width="100%">
     <tbody width="100%">
         <tr>
