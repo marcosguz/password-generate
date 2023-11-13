@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+<h1 align="center">Password Generate App</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Architecture
+This application will be contained in an application component or root component.
 
-## Available Scripts
+```javascript
+export function PasswordGeneratorCard() {
+    const [password, setPassword] = useState("Amazing Password");
 
-In the project directory, you can run:
+    return (
+        <div className={s.root}>
+            <div className={s.main}>
+                <PasswordGeneratorHeader />
+                <PasswordGeneratorBody onSubmit={setPassword} />
+            </div>
+            <PasswordGeneratorFooter password={password} />
+        </div>
+    );
+}
+```
+<table width="100%">
+    <tbody width="100%">
+        <tr>
+            <td rowspan=5 align="rigth">
+                <img src="https://github.com/marcosguz/password-generate/assets/75583218/b78b9c76-248a-4bdc-b7b0-43bbce701e0d" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td align="justify">Create a component for the entire password generator, card, etc. It's going to contain everything all the sub components..</td>
+        </tr>
+        <tr>
+            <td align="justify">You probably have to create a component for the header, because it is completely static</td>
+        </tr>
+        <tr>
+            <td align="justify">Another component would probably be created for the form.
+				Here we have all the inputs and a button to submit the form.</td>
+        </tr>
+        <tr>
+            <td align="justify">And finally, a component must be created, this section only contains the password but also the logic to copy it to your clipboard.</td>
+        </tr>
+    </tbody>
+</table>
 
-### `npm start`
+## About the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<table width="100%">
+    <tbody width="100%">
+        <tr>
+            <td rowspan=5 align="rigth">
+                <img src="https://github.com/marcosguz/password-generate/assets/75583218/3fe02943-ca32-46c2-ab9c-2439ef9fb08a" width="500px">
+            </td>
+        </tr>
+        <tr>
+            <td align="justify">This web application is a tool developed to facilitate the creation of passwords. It is quite simple to use: just
+You must choose the characters you want your password to have, and you can also copy it to your clipboard, for greater convenience.</td>
+        </tr>
+        <tr>
+            <td align="justify">
+				<a href="https://pass-guard-generator.netlify.app/">Password Generator App</a>
+			</td>
+        </tr>
+    </tbody>
+</table>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Developed with
+![React](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### `npm test`
+## How to contribute?
+Contributions are what make the open source community an amazing place to learn, inspire, and create. Any contribution you make is greatly appreciated.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork the project.
+2. Create a feature branch: (git checkout -b features/amazing-feature).
+3. Commit your changes: (git commit -m 'Add an Amazing Feature').
+4. Upload your changes to the branch: (features/amazing-feature)
+5. Open a pull request
 
-### `npm run build`
+## License
+Distributed under the MIT license. See the `LICENSE` file for more information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contact
+Marcos Guzmán
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a href="https://www.linkedin.com/in/marcos-guzman-nazareno" target="blank">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Marcos"/>
+</a>
+<a href="https://twitter.com/marccosgz" target="blank">
+      <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+</a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Recognitions
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Marked](https://marked.js.org/)
