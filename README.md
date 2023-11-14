@@ -58,7 +58,7 @@ You must choose the characters you want your password to have, and you can also 
         </tr>
         <tr>
             <td align="justify">
-				<a href="https://pass-guard-generator.netlify.app/">Password Generator App</a>
+				<a href="https://pass-guard-generate.vercel.app/">Password Generator App</a>
 			</td>
         </tr>
     </tbody>
